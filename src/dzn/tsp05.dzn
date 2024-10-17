@@ -1,0 +1,11 @@
+T = 5;
+M = 2;
+R = 1;
+
+min_makespan = 1;
+max_makespan = 128;
+
+test_duration = [3,2,4,1,2];
+test_machines = [{},{},{},{1},{2}];
+
+test_resources = [{},{1},{1},{},{}];
