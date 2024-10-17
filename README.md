@@ -46,6 +46,8 @@ There are three executables provided in the project:
     find a solution.
 * `python checker.py <input-file> <output-file>`  
     A program that checks if the given solution is valid and optimal.
+    If the checker gives "Solution is valid" then everything is okay
+    with the solution
 * `./test.sh <path-to-input>`  
     A shell script that runs the main program and validates the
     solution with the checker. It can also be used for batch
