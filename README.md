@@ -20,11 +20,6 @@ an instance of the problem. The output file is also written in a
 Prolog-style format and describes one optimal solution for that
 instance.
 
-To ensure that the given solution is valid and optimal, you
-may want to run the `checker.py` program on the generated output
-file. If the checker gives "Solution is valid" then everything is
-okay with the solution.
-
 The input file should contain the following information:
 * Number of tests
 * Number of machines
@@ -63,8 +58,10 @@ an optimal solution to a given instance. It may be invoked as follows:
 python proj.py <input-file> <output-file>
 ```
 
-To check if the given solution is valid and optimal, you can run the
-checker.py program on the generated output file:
+To ensure that the given solution is valid and optimal, you
+may want to run the `checker.py` program on the generated output
+file. If the checker gives "Solution is valid" then everything is
+okay with the solution.
 
 ```shell
 python checker.py <input-file> <output-file>
