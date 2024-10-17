@@ -56,17 +56,26 @@ installed on your system.
 
 ### Usage
 
-There are three executables provided in the project:
+The main program invokes the MiniZinc solver in order to find
+an optimal solution to a given instance. It may be invoked as follows:
 
-* `python proj.py <input-file> <output-file>`  
-    The main program that invokes the MiniZinc solver in order to
-    find a solution.
-* `python checker.py <input-file> <output-file>`  
-    A program that checks if the given solution is valid and optimal.
-    If the checker gives "Solution is valid" then everything is okay
-    with the solution
-* `./test.sh <path-to-input>`  
-    A shell script that runs the main program and validates the
-    solution with the checker. It can also be used for batch
-    processing of multiple instances on the same folder. The
-    solutions for each instance are saved in the `out` folder.
+```shell
+python proj.py <input-file> <output-file>
+```
+
+To check if the given solution is valid and optimal, you can run the
+checker.py program on the generated output file:
+
+```shell
+python checker.py <input-file> <output-file>
+```
+
+There is also a shell script that automates this process by running
+the main program and immediately validating the solution with the
+checker. This script can also be used for batch processing of multiple
+instances on the same folder. The solutions for each instance are
+saved in the `out` folder.
+
+```shell
+./test.sh <path-to-input>
+```
