@@ -27,14 +27,14 @@ The output file will then contain one optimal solution for
 that instance. To ensure that the solution is valid and optimal,
 you may want to run the `checker.py` program on the generated
 output file. If the checker gives "Solution is valid" then
-everything is okay with the solution
+everything is okay with the solution.
 
-**Warning**: for instances with a large number of tests,
-machines and resources, you may want to increase the timeout
-value in the `proj.py` file in order to avoid timeouts on 
-complex solutions. The timeout value is very useful to avoid
-wasting time on possibly infeasible solutions. Machines with
-a low processing power may also need a higher timeout value.
+**Warning**: a timeout value is given to the solver so that
+it does not waste time on possibly infeasible solutions. This
+is very useful and allows the program to find an optimal solution
+quickly. However, if the instance is too complex, or your machine
+has a low processing power, you may want to increase this value
+so that satisfiable solutions are not timed out.
 
 ## Getting Started
 
